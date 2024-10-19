@@ -1,0 +1,465 @@
+/* -------- common css ----------  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+html {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+li,
+ul,
+ol,
+img,
+a {
+  line-height: 0.8;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+:root {
+  --fontPoppins: 'Poppins', sans-serif;
+  --fontRegular: 400;
+  --fontMedium: 500;
+  --fontSemibold: 600;
+  --fontBold: 700;
+  --primaryColor: #5e3bee;
+  --buttonHover: #330ad8;
+  --headingColor: #333333;
+  --paraColor: #121212;
+  --whiteColor: #ffffff;
+  --linkColor: #000000;
+  --BgColor: #f9f9fc;
+}
+/* -------- common css ----------  */
+
+/* --------- navbar section start end ------  */
+.navbar {
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.navbar .navbar-nav-scroll {
+  column-gap: 47px;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 0 0;
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontRegular);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 22px;
+  color: var(--linkColor);
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.nav-item .nav-link:hover {
+  color: var(--primaryColor);
+}
+.navbar button {
+  padding: 12px 22px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  display: flex;
+  column-gap: 7px;
+  align-items: center;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.navbar button:hover {
+  background: var(--buttonHover);
+}
+.button i {
+  font-size: 16px;
+}
+/* --------- navbar section start now ------  */
+
+/* --------- Banner section start end ------  */
+#banner {
+  padding-top: 119px;
+  background: var(--BgColor);
+}
+
+.banner_left span {
+  font-family: var(--fontPoppins);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: var(--fontMedium);
+  color: var(--primaryColor);
+}
+
+.banner_left h1 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontBold);
+  font-size: 64px;
+  color: #000000;
+  line-height: 78px;
+  max-width: 479px;
+  margin-top: 19px;
+}
+
+.banner_right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner_button button {
+  padding: 24px 38px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: var(--fontMedium);
+  font-size: 14px;
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  display: flex;
+  column-gap: 7px;
+  align-items: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.banner_button i {
+  font-size: 16px;
+}
+
+.banner_button {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  margin-top: 28px;
+}
+
+.banner_button a {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--linkColor);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.banner_button button:hover {
+  background: var(--buttonHover);
+}
+/* --------- Banner section start now ------  */
+
+/* --------- counter section start end ------  */
+#counter {
+  padding-top: 91px;
+}
+.counter-item h3 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontSemibold);
+  font-size: 48px;
+  letter-spacing: 0.5px;
+  color: var(--linkColor);
+  margin-bottom: 8px;
+}
+.counter-item p {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 16px;
+  line-height: 24px;
+  color: #121212;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+/* --------- counter section start now ------  */
+/* --------- services section start end ------  */
+#service {
+  padding-top: 116px;
+}
+.service-header h6 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.service-header h6::after {
+  content: url(../images/Polygon\ .png);
+  position: absolute;
+  top: -35px;
+  left: 67px;
+  z-index: -1;
+}
+
+.service-header h3 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 44px;
+  letter-spacing: 0.5px;
+  color: var(--linkColor);
+  text-transform: capitalize;
+  margin: 12px 0;
+}
+
+.service-header p {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 16px;
+  line-height: 32px;
+  color: #121212;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.service-item {
+  background-color: var(--whiteColor);
+  padding: 52px 35px;
+  filter: drop-shadow(37px 37px 80px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(37px 37px 80px rgba(0, 0, 0, 0.1));
+  margin-top: 64px;
+  margin-bottom: 140px;
+  transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+}
+.service-item:hover {
+  background-color: #f9f9fc;
+}
+.service-item h5 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 20px;
+  letter-spacing: 0.5%;
+  color: var(--linkColor);
+  margin-top: 37px;
+  margin-bottom: 9px;
+}
+.service-item p {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 16px;
+  line-height: 27px;
+  color: #121212;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  padding: 0 50px;
+}
+/* --------- services section start now ------  */
+/* --------- About section start now ------  */
+#about {
+  background: url(../images/aboutBanner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 109px;
+  padding-bottom: 113px;
+}
+.about_left {
+  padding-right: 150px;
+}
+.about_left span {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontRegular);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--primaryColor);
+}
+
+.about_left h2 {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontBold);
+  font-size: 60px;
+  line-height: 78px;
+  color: var(--headingColor);
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.about_left p {
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontRegular);
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.5s;
+  color: var(--headingColor);
+  margin-bottom: 30px;
+}
+
+.about_left button {
+  padding: 24px 38px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: var(--fontMedium);
+  font-size: 14px;
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  display: flex;
+  column-gap: 7px;
+  align-items: center;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.about_left i {
+  font-size: 16px;
+}
+.about_left button:hover {
+  background: var(--buttonHover);
+}
+/* --------- About section end now ------  */
+/* --------- brand section start now ------  */
+#brand {
+  padding: 127px 113px  0;
+}
+
+/* --------- brand section end now ------  */
+/* --------- portfolio section start now ------  */
+#portfolio{
+  padding-top: 113px;
+  position: relative;
+
+}
+.portfolio_left span::after {
+	content: url(../images/Polygon\ .png);
+	position: absolute;
+	top: 77px;
+	left: 294px;
+	z-index: -1;
+}
+.portfolio_left span{
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontRegular);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+}
+.portfolio_left h4{
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontMedium);
+  font-size: 44px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-top: 11px;
+}
+.portfolio_right p {
+	font-family: var(--fontPoppins);
+	font-weight: var(--fontRegular);
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0.5px;
+	margin-right: 137px;
+}
+
+.portfolio-wrapper{
+  margin-top: 51px;
+}
+
+.portfolio-item{
+  filter: drop-shadow(37px 37px 80px rgba(0, 0, 0, 0.1));
+  -webkit-filter: drop-shadow(37px 37px 80px rgba(0, 0, 0, 0.1));
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  overflow: hidden;
+}
+.portfolio-item-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio-item-img{
+  height: 389px;
+}
+.portfolio-item-content{
+  padding: 33px 33px 47px 46px;
+  background: var(--whiteColor);
+}
+.portfolio-item-content h5{
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontSemibold);
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: var(--linkColor);
+
+}
+.portfolio-item-content p{
+  font-family: var(--fontPoppins);
+  font-weight: var(--fontRegular);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: var(--paraColor);
+  margin-top: 8px;
+
+}
+/* --------- portfolio section end now ------  */
+/* --------- brand section start now ------  */
+/* --------- brand section end now ------  */
+/* --------- brand section start now ------  */
+/* --------- brand section end now ------  */
+/* --------- brand section start now ------  */
+/* --------- brand section end now ------  */
+/* --------- brand section start now ------  */
+/* --------- brand section end now ------  */
+/* --------- navbar section start end ------  */
+/* --------- navbar section start now ------  */
+/* --------- navbar section start end ------  */
+/* --------- navbar section start now ------  */
+/* --------- navbar section start end ------  */
+/* --------- navbar section start now ------  */
+/* --------- navbar section start end ------  */
